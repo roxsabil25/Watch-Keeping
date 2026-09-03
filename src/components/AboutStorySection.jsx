@@ -1,4 +1,3 @@
-import React from 'react';
 import { products } from '../data/products';
 
 const AboutStorySection = () => {
@@ -13,7 +12,7 @@ const AboutStorySection = () => {
   }, []);
 
   return (
-    <section className="mb-16 bg-black text-white py-16 px-6 md:px-12 lg:px-20 font-sans">
+    <section id="story" data-aos="fade-up" className="mb-16 bg-black text-white py-16 px-6 md:px-12 lg:px-20 font-sans">
       <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         {/* Left Side Content */}
