@@ -1,0 +1,2 @@
+import ProductCard from './ProductCard.jsx'
+export default function ProductGrid({ products, onQuickView }) { return <section id="collection" className="grid grid-cols-1 gap-8 bg-[#FAFAF8] px-6 pb-20 md:grid-cols-2 lg:grid-cols-3">{products.map((product) => <ProductCard key={product.id} product={product} onQuickView={onQuickView}/>)}{products.length === 0 && <p className="col-span-full py-12 text-center text-sm text-gray-500">No timepieces match your search.</p>}</section> }
